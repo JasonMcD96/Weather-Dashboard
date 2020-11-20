@@ -1,0 +1,15 @@
+#mainHeader {
+    text-align: center;
+}
+
+main {
+    padding: 15px;
+}
+
+.forecastDiv {
+    margin: 10px;
+}
+
+h4{
+    font-size: 18px;
+}
