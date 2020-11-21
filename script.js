@@ -68,7 +68,7 @@ function displaySearchResults(object) {
     console.log(object)
 
     var imgCode = object.list[0].weather[0].icon
-    weatherImageElement.attr("src", 'http://openweathermap.org/img/wn/' + imgCode + '@2x.png')
+    weatherImageElement.attr("src", 'https://openweathermap.org/img/wn/' + imgCode + '@2x.png')
     tempElement.text(object.list[0].main.temp + " °F");
     humidityElement.text(object.list[0].main.humidity + "%");
     windSpeedElement.text(object.list[0].wind.speed + " MPH")
@@ -76,7 +76,7 @@ function displaySearchResults(object) {
 }
 
 function getUVIndex(lat, lon) {
-    var queryURL = "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=" + key
+    var queryURL = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=" + key
 
     $.ajax({
         url: queryURL,
@@ -118,7 +118,7 @@ function showFiveDayForecast(object) {
 
             newElement.append("<h4>" + getDate(object.list[i].dt_txt) + "</h4>")
             var imgCode = object.list[i].weather[0].icon
-            newElement.append("<img src=\" http://openweathermap.org/img/wn/" + imgCode + "@2x.png\">")
+            newElement.append("<img src=\" https://openweathermap.org/img/wn/" + imgCode + "@2x.png\">")
             newElement.append("<p>Temp: " + object.list[i].main.temp + " °F</p>")
             newElement.append("<p>Humidity: " + object.list[i].main.humidity + "%</p>")
 
@@ -127,7 +127,7 @@ function showFiveDayForecast(object) {
 
             newElement.append("<h4>" + getDate(object.list[39].dt_txt) + "</h4>")
             var imgCode = object.list[39].weather[0].icon
-            newElement.append("<img src=\" http://openweathermap.org/img/wn/" + imgCode + "@2x.png\">")
+            newElement.append("<img src=\" https://openweathermap.org/img/wn/" + imgCode + "@2x.png\">")
             newElement.append("<p>Temp: " + object.list[39].main.temp + " °F</p>")
             newElement.append("<p>Humidity: " + object.list[39].main.humidity + "%</p>")
             forecastElement.append(newElement)
