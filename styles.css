@@ -1,15 +1,65 @@
-#mainHeader {
-    text-align: center;
+body {
+    background-color: rgb(240, 227, 211);
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
 }
 
 main {
     padding: 15px;
 }
 
-.forecastDiv {
-    margin: 10px;
+h4 {
+    font-size: 19px;
+    margin-top: 5px;
 }
 
-h4{
-    font-size: 18px;
+aside {
+    text-align: center;
+}
+
+button {
+    border-radius: 5px;
+}
+
+button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+.historyItem {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.forecastDiv {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.forecastDiv p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#searchHistoryContainer {
+    margin-top: 30px;
+   
+}
+
+#mainHeader {
+    text-align: center;
+}
+
+#searchPrompt {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#historyTag {
+    font-family: 'Raleway', sans-serif;
 }
